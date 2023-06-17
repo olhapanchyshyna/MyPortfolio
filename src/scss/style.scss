@@ -1,0 +1,126 @@
+@use 'sass:math';
+
+// Подключение шрифтов локально из папки "./src/fonts" =======================================================================================================================
+@import 'config/fonts';
+
+// Подключение sass функций и миксинов и рассширений стилей =======================================================================================================================
+@import 'config/functions';
+@import 'config/mixins';
+@import 'config/patternSelectors';
+
+// Подключение переменных =======================================================================================================================
+@import 'config/vars';
+
+// Обнуление =======================================================================================================================
+@import 'config/reset';
+
+//  =======================================================================================================================
+// Библиотеки
+@import 'libs/animate.css.scss';
+// Подлючение кастомного скрола для всего сайта =======================================================================================================================
+@import 'config/scrollbar';
+
+// Общие параметры, шаблоны(заготовки) и вспомагательные классы =======================================================================================================================
+@import 'config/base';
+
+// БЕМ блоки используемые во всё проекте =======================================================================================================================
+@import 'config/common';
+
+// Подключение стилей отдельных блоков и секций =======================================================================================================================
+@import 'layout/first-screen';
+@import 'layout/sidepanel';
+@import 'layout/hamburger';
+@import 'layout/about-me';
+@import 'layout/skils';
+@import 'layout/use';
+@import 'layout/indicator';
+@import 'layout/portfolio';
+@import 'layout/contact';
+
+
+body{
+    background-color: #030303;
+}
+
+.container{
+    max-width: $containerWidth;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.subtitle{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    color: $darkWhiteColor;
+    z-index: 1;
+    @include beforeCircle;
+    margin-left: 11px;
+}
+.li-sibtitle{
+    @include beforeLiCirkle;
+    position: relative;
+}
+.title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+    color: $darkWhiteColor;
+}
+.btn{
+    a{
+        color:$darkWhiteColor;
+        font-weight: bold;
+    }
+    padding: 12px 26px;
+    min-width: 135px;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 10px;
+    height: 45px;
+    background-color: transparent;
+    background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+    box-shadow: 2px 2px 20px rgb(1, 0, 1);
+    transition: all 500ms ease-in-out;
+    &:hover, &:focus, &:active {
+        background: transparent;
+        box-shadow: 4px 4px 6px 0 #b621fe, -4px -4px 6px 0 #1fd1f9;
+        color: #fff;
+    }
+}  
+.divider{
+    width: 60px;
+    height: 0px;
+    border: 3px solid $mainColor;
+    margin-top: 25px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__subtitle{
+        &::before{  
+            left: 50% !important;
+            transform: translateX(-50%);
+        }
+    }
+    &__text{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        color: $darkWhiteColor;
+    }
+}
+.bxp{
+    box-shadow: 0px 0px 74px rgba(254, 66, 167, 0.8);
+}
+.bxb{
+    box-shadow: 0px 0px 74px rgba(149, 44, 255, 0.8);
+}
+.slider__indicators{
+    display: none;
+}
+
+
+@import 'layout/media';

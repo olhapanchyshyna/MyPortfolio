@@ -1,0 +1,6 @@
+.vscode
+.temporary_cache
+
+node_modules
+package-lock.json
+gulp/version.json

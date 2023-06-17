@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/head.html', {
+        'title' : 'Portfolio'
+    })
+<body>
+    <!-- sidepanel -->
+    <aside class="sidepanel">
+        <div class="sidepanel__text">Социальные сети</div>
+        <div class="sidepanel__line"></div>
+        <a href="https://www.instagram.com/olya.panchyshyna/?next=%2F" target="_blank"><svg class="sidepanel__link"><use xlink:href="images/icons/icons.svg#social--instagram"></use></svg></a>
+        <a href="https://github.com/olhapanchyshyna" target="_blank"><svg class="sidepanel__link"><use xlink:href="images/icons/icons.svg#social--github"></use></svg></a>
+        <a href="https://www.linkedin.com/in/olha-panchyshyna-44a509235/" target="_blank"><svg class="sidepanel__link"><use xlink:href="images/icons/icons.svg#social--linkedin" ></use></svg></a>
+        <a href="https://codepen.io/Olya-Panchyshyna" target="_blank"><svg class="sidepanel__link"><use xlink:href="images/icons/icons.svg#social--codepan" ></use></svg></a>
+    </aside>
+
+    <!-- menu -->
+    <div class="menu animate__animated">
+        <div class="menu__content animate__animated">   
+            <div class="menu__close">
+                <svg class="menu__close__link"><use xlink:href="images/icons/icons.svg#close--close"></use></svg>
+            </div>
+            <nav>
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#about" class="menu__item_link">ПРО МЕНЯ</a></li>
+                    <li class="menu__item"><a href="#use" class="menu__item_link">МОИ НАВЫКИ</a></li>
+                    <li class="menu__item"><a href="#portfolio" class="menu__item_link">МОИ РАБОТЫ</a></li>
+                    <li class="menu__item"><a href="#contact" class="menu__item_link">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+            <div class="menu__social">
+                <a href="https://www.instagram.com/olya.panchyshyna/?next=%2F" target="_blank"><svg class="menu__social__link"><use xlink:href="images/icons/icons.svg#social--instagram"></use></svg></a>
+                <a href="https://github.com/olhapanchyshyna" target="_blank"><svg class="menu__social__link"><use xlink:href="images/icons/icons.svg#social--github"></use></svg></a>
+                <a href="https://www.linkedin.com/in/olha-panchyshyna-44a509235/" target="_blank"><svg class="menu__social__link"><use xlink:href="images/icons/icons.svg#social--linkedin" ></use></svg></a>
+            </div>
+        </div>
+        <div class="menu__overlay animate__animated"></div>
+    </div>
+
+    <!-- first-screen -->
+    <section class="first-screen">
+        <div class="first-screen__inner-wrapper">
+            <div class="hamburger">
+                <span></span>
+                <span class="hamburger__big"></span>
+                <span></span>
+            </div>
+            <div class="container">
+                <div class="first-screen__content">
+                    <h2 class="first-screen__subtitle subtitle animate__animated animate__fadeInRight">Меня зовут Панчишина Ольга</h2>
+                    <h1 class="first-screen__title title animate__animated animate__fadeInLeft">Я Frontend <span>разработчик</span></h1>
+                    <div class="first-screen__btn-group animate__animated animate__fadeIn">
+                        <button class="first-screen__btn btn"><a href="#portfolio">Портфолио</a></button>
+                        <button class="first-screen__btn btn"><a href="#about">Про меня</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- about-me -->
+    <section class="about-me" id="about">
+        <div class="container">
+            <div class="about-me__wraper">
+
+                <div class="about-me__background"><img src="./images/background/background.png" alt="background"></div>
+                <div class="about-me__photo"><img src="./images/main_photo.jpg" alt="me"></div>
+                
+                <div class="about-me__content__wrapper">
+                    <div class="about-me__content">
+                        <div class="about-me__subtitle subtitle">Про меня</div>
+                        <h2 class="about-me__title title">Меня зовут Ольга</h2>
+                        <div class="divider"></div>
+                        <div class="about-me__text">Я - Front-end разработчик с опытом работы больше года. За это время я создала 9 собственных проектов.<br><br> 
+                            Мои навыки:<br>
+                            - создание адаптивных сайтов с использованием методологии БЭМ<br>
+                            - использую препроцессоры Sass/Scss<br>
+                            - имею опыт работы со сборщиками Gulp, Webpack<br>
+                            - понимаю принципы ООП<br>
+                            - умею использовать AJAX<br>
+                            - имею понимание об оптимизации скорости и валидацией верстки по стандартам w3c.<br>
+                            - на базовом уровне умею работать с Git и хостингом репозиторием на GitHub - уверенные навыки создания мобильной адаптации сайтов<br><br>
+                            Я готова постоянно развиваться и приобретать новые знания и навыки в области Front-end разработки.</div>
+                    </div>
+    
+                    <div class="about-me__list">
+                        <div class="about-me__item">
+                            <div class="about-me__item_icon subtitle">
+                                <svg class="about-me__link"><use xlink:href="images/icons/icons.svg#experience--developer"></use></svg>
+                            </div>
+                            <div class="about-me__item_content"> 
+                                <div class="about-me__item_subtitle">Верстка сайтов</div>
+                                <div class="about-me__item_text">Я могу сздать сайт под любой размер экрана, с использованием методологии БЭМ и препроцессоров Sass/Scss, что значительно ускоряет работу, а так же уменьшает код. Так же я умею работать с системой контроля версий Git что позволяет в любой момент вернуться к прошлой версии сайта и отменить все изменения.</div>
+                            </div>
+                        </div>
+                        <div class="about-me__item">
+                            <div class="about-me__item_icon subtitle">
+                                <svg class="about-me__link"><use xlink:href="images/icons/icons.svg#experience--designer"></use></svg>
+                            </div>
+                            <div class="about-me__item_content">
+                                <div class="about-me__item_subtitle">Front-end</div>
+                                <div class="about-me__item_text">Я умею создавать интерактив на сайте: слайды, табы, модальные окна, таймеры, аккордионы, подключать карты а так же видео, к сайту. использую стороние библиотеки как готовое решение, а так же анимации.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- skils -->
+    <section class="skils" id="skils">
+        <div class="container">
+            <div class="header">
+                <div class="header__subtitle subtitle">Образование</div>
+                <h2 class="header__title title">Чем я буду полезна</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="skils__wrapper">
+                <!-- 1 -->
+                <div class="skils__colum">
+                    <div class="skils__list">
+                        <div class="skils__subtitle li-sibtitle">h</div>
+                        <!-- 1 -->
+                        <div class="skils__item">
+                            <div class="skils__item_head">
+                                <div class="skils__item_head_icon subtitle">
+                                    <svg class="skils__link"><use xlink:href="images/icons/icons.svg#experience--courses"></use></svg>
+                                </div>
+                                <div class="skils__item_head_content">
+                                    <div class="skils__item_head_title">Udemy</div>
+                                    <div class="skils__item_head_subtitle">Курсы по Web-разработке</div>
+                                </div>
+                            </div>
+                            <div class="skils__item_footer_text">Создание сайтов по методологии БЭМ, использование препроцессоров Sass/Scss/Less. использование  Git и GitHub. Создание мобильной адаптации сайтов и приложений. Оптимизация скорости работы сайтов и проводить валидацию верстки по стандартам w3c. Робота с множеством готовых плагинов, устанавливать гео-карты на сайте, работать со шрифтами.</div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="skils__item">
+                            <div class="skils__item_head">
+                                <div class="skils__item_head_icon subtitle">
+                                    <svg class="skils__link"><use xlink:href="images/icons/icons.svg#experience--courses"></use></svg>
+                                </div>
+                                <div class="skils__item_head_content">
+                                    <div class="skils__item_head_title">Lemon school</div>
+                                    <div class="skils__item_head_subtitle">Курсы по Web-разработке</div>
+                                </div>
+                            </div>
+                            <div class="skils__item_footer_text">Создание адаптивных, удобных в использовании сайтов. Работа с графическими редакторами в контексте верстки: Photoshop, Zeplin, Figma, Avocode. с анимациями и использованием библиотек.</div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="skils__item">
+                            <div class="skils__item_head">
+                                <div class="skils__item_head_icon subtitle">
+                                    <svg class="skils__link"><use xlink:href="images/icons/icons.svg#experience--university"></use></svg>
+                                </div>
+                                <div class="skils__item_head_content">
+                                    <div class="skils__item_head_title">НУБІП</div>
+                                    <div class="skils__item_head_subtitle">Бакалавр права(2021-2025)</div>
+                                </div>
+                            </div>
+                            <div class="skils__item_footer_text">Вища освіта ступеня бакалавр за спеціальністю 081 Право.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="skils__colum">
+                    <div class="skils__list">
+                        <div class="skils__subtitle li-sibtitle">h</div>
+                       <!-- 1 -->
+                       <div class="skils__item">
+                            <div class="skils__item_head">
+                                <div class="skils__item_head_icon subtitle">
+                                    <svg class="skils__link"><use xlink:href="images/icons/icons.svg#experience--courses"></use></svg>
+                                </div>
+                                <div class="skils__item_head_content">
+                                    <div class="skils__item_head_title">Udemy</div>
+                                    <div class="skils__item_head_subtitle">Подробное изучение JavaScript</div>
+                                </div>
+                            </div>
+                            <div class="skils__item_footer_text">Основы программирования и алгоритмов. Основы ООП. AJAX, JSON. Promise, LocalStorages, Async/Await. npm, Gulp, Webpack</div>
+                       </div>
+                        <!-- 2 -->
+                        <div class="skils__item">
+                            <div class="skils__item_head">
+                                <div class="skils__item_head_icon subtitle">
+                                    <svg class="skils__link"><use xlink:href="images/icons/icons.svg#experience--courses"></use></svg>
+                                </div>
+                                <div class="skils__item_head_content">
+                                    <div class="skils__item_head_title">Udemy</div>
+                                    <div class="skils__item_head_subtitle">Практический JavaScript</div>
+                                </div>
+                            </div>
+                            <div class="skils__item_footer_text">Практическое применение языка программирования JavaScript на реальных проектах. Проэкты в класическом и ООП стилях. Выполнение проектов по техническому заданию. Настройка сборки проектов</div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="skils__item">
+                            <div class="skils__item_head">
+                                <div class="skils__item_head_icon subtitle">
+                                    <svg class="skils__link"><use xlink:href="images/icons/icons.svg#experience--courses"></use></svg>
+                                </div>
+                                <div class="skils__item_head_content">
+                                    <div class="skils__item_head_title">Result school</div>
+                                    <div class="skils__item_head_subtitle"> JavaScript</div>
+                                </div>
+                            </div>
+                            <div class="skils__item_footer_text"> Hello World. Синтаксис. Типы данных. Приведение типов в JavaScript. Работа со строками Действия. Debug. Функции. Массивы. Объекты. Дата и Время в JavaScript. Ключевое слово «this». Классы + ООП. Работа с DOM. Асинхронность. Callback + Event Loop. Webpack, rollup.  ES6 import export.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- use -->
+    <section class="use" id="use">
+        <div class="container">
+            <div class="header">
+                <div class="header__subtitle subtitle">Навыки</div>
+                <h2 class="header__title title">Что я использую в работе</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="use__wrapper">
+                <div class="use__list">
+                    <div class="use__item bxp">
+                        <div class="use__icon">
+                            <svg class="use__link"><use xlink:href="images/icons/icons.svg#skills--html5"></use></svg>
+                        </div>
+                        <div class="use__title">HTML5</div>
+                        <div class="use__text">Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта</div>
+                    </div>
+                    <div class="use__item bxb">
+                        <div class="use__icon">
+                            <svg class="use__link"><use xlink:href="images/icons/icons.svg#skills--css3"></use></svg>
+                        </div>
+                        <div class="use__title">CSS3</div>
+                        <div class="use__text">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!</div>
+                    </div>
+                    <div class="use__item bxp">
+                        <div class="use__icon">
+                            <svg class="use__link"><use xlink:href="images/icons/icons.svg#skills--js"></use></svg>
+                        </div>
+                        <div class="use__title">Java Script</div>
+                        <div class="use__text">Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</div>
+                    </div>
+                    <div class="use__item bxb">
+                        <div class="use__icon">
+                            <svg class="use__link"><use xlink:href="images/icons/icons.svg#skills--sass"></use></svg>
+                        </div>
+                        <div class="use__title">Sass</div>
+                        <div class="use__text">Препроцесор Sass позволяет значительно сократить время на написание и редактирование кода стилей благодаря удобному синтаксису и множеству готовых функций.</div>
+                    </div>
+                    <div class="use__item bxb">
+                        <div class="use__icon">
+                            <svg class="use__link"><use xlink:href="images/icons/icons.svg#skills--git"></use></svg>
+                        </div>
+                        <div class="use__title">Git</div>
+                        <div class="use__text">Это инструмент, который облегчает совместную работу над проектами, позволяет контролировать изменения в коде, отслеживать историю изменений и возвращаться к предыдущим версиям проекта. </div>
+                    </div>
+                    <div class="use__item bxp">
+                        <div class="use__icon">
+                            <svg class="use__link"><use xlink:href="images/icons/icons.svg#skills--bootstrap"></use></svg>
+                        </div>
+                        <div class="use__title">Bootstrap</div>
+                        <div class="use__text">Это мощный и гибкий инструмент для создания красивых, адаптивных и интерактивных веб-сайтов.</div>
+                    </div>
+                    <div class="use__item bxb">
+                        <div class="use__icon">
+                            <svg class="use__link"><use xlink:href="images/icons/icons.svg#skills--gulp"></use></svg>
+                        </div>
+                        <div class="use__title">Gulp</div>
+                        <div class="use__text">Это инструмент автоматизации задач, который позволяет значительно ускорить и упростить процесс разработки веб-приложений</div>
+                    </div>
+                    <div class="use__item bxp">
+                        <div class="use__icon">
+                            <svg class="use__link"><use xlink:href="images/icons/icons.svg#skills--webpack"></use></svg>
+                        </div>
+                        <div class="use__title">Webpack</div>
+                        <div class="use__text">Это инструмент, который позволяет упаковывать, оптимизировать и управлять зависимостями веб-приложений</div>
+                    </div>
+                </div>
+                <div class="slider__counter">
+                    <ul class="slider__indicators">
+                        <li data-slide-to="1" class="dot"></li>
+                        <li data-slide-to="2" class="dot"></li>
+                        <li data-slide-to="3" class="dot"></li>
+                        <li data-slide-to="4" class="dot"></li>
+                        <li data-slide-to="5" class="dot"></li>
+                        <li data-slide-to="6" class="dot"></li>
+                        <li data-slide-to="7" class="dot"></li>
+                        <li data-slide-to="8" class="dot"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- indicator -->
+    <section class="indicator">
+        <div class="container">
+            <div class="indicator__list">
+                <div class="indicator__item">
+                    <div class="indicator__item_head">
+                        <div class="indicator__subtitle subtitle">Создание сайтов</div>
+                        <div class="indicator__percent">95%</div>
+                    </div>
+                    <div class="indicator__item_footer">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="indicator__item">
+                    <div class="indicator__item_head">
+                        <div class="indicator__subtitle subtitle">Креативность</div>
+                        <div class="indicator__percent">75%</div>
+                    </div>
+                    <div class="indicator__item_footer">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="indicator__item">
+                    <div class="indicator__item_head">
+                        <div class="indicator__subtitle subtitle">Soft skills</div>
+                        <div class="indicator__percent">95%</div>
+                    </div>
+                    <div class="indicator__item_footer">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="indicator__item">
+                    <div class="indicator__item_head">
+                        <div class="indicator__subtitle subtitle">Анимации</div>
+                        <div class="indicator__percent">65%</div>
+                    </div>
+                    <div class="indicator__item_footer">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="header">
+                <div class="header__subtitle subtitle">Портфолио</div>
+                <h2 class="header__title title">Мои работы</h2>
+                <div class="divider"></div>
+                <div class="portfolio__wrapper">
+                    <div class="portfolio__list">
+                      
+                        <!-- 1 -->
+                        <div class="portfolio__item"><a href="static/softerio/index.html" target="_blank"><img src="./images/works/softerio.png" alt="softerio">
+                            <div class="portfolio__hideText">
+                                <div class="portfolio__hideText__title">Softerio</div>
+                                <div class="portfolio__hideText__subtitle">Front-end. Проэкт выполнен в класическом стиле с анимациями и js интерактивом</div>
+                                <button class="portfolio__hideText__link btn">Посмотреть</button>
+                            </div></a>
+                        </div>
+                        <!-- 2 -->
+                        <div class="portfolio__item"><a href="static/masterTao/index.html" target="_blank"><img src="./images/works/mastertao.png" alt="mastertao">
+                            <div class="portfolio__hideText">
+                                <div class="portfolio__hideText__title">MasterTao</div>
+                                <div class="portfolio__hideText__subtitle">Front-end. Проэкт выполнен в класическом стиле с анимациями и js интерактивом</div>
+                                <button class="portfolio__hideText__link btn">Посмотреть</button>
+                            </div></a>
+                        </div>
+                        <!-- 3 -->
+                        <div class="portfolio__item"><a href="static/pulse/index.html" target="_blank"><img src="./images/works/pulse.png" alt="pulse">
+                            <div class="portfolio__hideText">
+                                <div class="portfolio__hideText__title">Pulse</div>
+                                <div class="portfolio__hideText__subtitle">Front-end. Проэкт выполнен в класическом стиле с анимациями и js интерактивом</div>
+                                <button class="portfolio__hideText__link btn">Посмотреть</button>
+                            </div></a>
+                        </div>
+                        <!-- 4 -->
+                        <div class="portfolio__item"><a href="static/telegaADS/index.html" target="_blank"><img src="./images/works/telegaads.png" alt="telegaads">
+                            <div class="portfolio__hideText">
+                                <div class="portfolio__hideText__title">TelegaAds</div>
+                                <div class="portfolio__hideText__subtitle">Front-end. Проэкт выполнен в класическом стиле с анимациями и js интерактивом</div>
+                                <button class="portfolio__hideText__link btn">Посмотреть</button>
+                            </div></a>
+                        </div>
+                        <!-- 5 -->
+                        <div class="portfolio__item"><a href="static/tftAero/index.html" target="_blank"><img src="./images/works/tftaero.png" alt="tftaero">
+                            <div class="portfolio__hideText">
+                                <div class="portfolio__hideText__title">TftAero</div>
+                                <div class="portfolio__hideText__subtitle">Front-end. Проэкт выполнен в класическом стиле с анимациями и js интерактивом</div>
+                                <button class="portfolio__hideText__link btn">Посмотреть</button>
+                            </div></a>
+                        </div>
+                       
+                        <!-- 6 -->
+                        <div class="portfolio__item"><a href="static/art/index.html" target="_blank"><img src="./images/works/art.png" alt="art">
+                            <div class="portfolio__hideText">
+                                <div class="portfolio__hideText__title">Art</div>
+                                <div class="portfolio__hideText__subtitle">Только Js. Проэкт выполнен в класическом стиле с анимациями js интерактивом</div>
+                                <button class="portfolio__hideText__link btn">Посмотреть</button>
+                            </div></a>
+                        </div>
+                        <!-- 7 -->
+                        <div class="portfolio__item"><a href="static/irnasWindow/index.html" target="_blank"><img src="./images/works/irvaswindow.png" alt="irvaswindow">
+                            <div class="portfolio__hideText">
+                                <div class="portfolio__hideText__title">irvasWindow</div>
+                                <div class="portfolio__hideText__subtitle">Только Js. Проэкт выполнен в класическом стиле с анимациями и js интерактивом</div>
+                                <button class="portfolio__hideText__link btn">Посмотреть</button>
+                            </div></a>
+                        </div>
+                        <!-- 8 -->
+                        <div class="portfolio__item"><a href="static/loan/index.html" target="_blank"><img src="./images/works/loan.png" alt="loan">
+                            <div class="portfolio__hideText">
+                                <div class="portfolio__hideText__title">Loan</div>
+                                <div class="portfolio__hideText__subtitle">Только Js. Проэкт выполнен в ООП стиле с анимациями и js интерактивом</div>
+                                <button class="portfolio__hideText__link btn">Посмотреть</button>
+                            </div></a>
+                        </div>
+                    </div>
+                    <div class="slider__counter">
+                        <ul class="slider__indicators">
+                            <li data-slide-to="1" class="dot"></li>
+                            <li data-slide-to="2" class="dot"></li>
+                            <li data-slide-to="3" class="dot"></li>
+                            <li data-slide-to="4" class="dot"></li>
+                            <li data-slide-to="5" class="dot"></li>
+                            <li data-slide-to="6" class="dot"></li>
+                            <li data-slide-to="7" class="dot"></li>
+                            <li data-slide-to="8" class="dot"></li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__wrapper">
+
+                <div class="contact__background"><img src="./images/bakground/background.png" alt="background"></div>
+                <div class="contact__photo"><img src="./images/main_photo.jpg" alt="me"></div>
+                
+                <div class="header">
+                    <div class="contact__header">
+                        <div class="header__subtitle subtitle">Контакты</div>
+                        <h2 class="header__title title">Свяжитесь со мной</h2>
+                        <div class="divider"></div>
+                        <div class="header__text">Любым удобным для вас способом:</div>
+
+                        <div class="contact__group-link">
+                            <a href="https://www.instagram.com/olya.panchyshyna/?next=%2F" target="_blank"><svg class="contact__link"><use xlink:href="images/icons/icons.svg#social--instagram"></use></svg></a>
+                            <a href="https://t.me/olya_panchyshyna" target="_blank"><svg class="contact__link"><use xlink:href="images/icons/icons.svg#social--telegram" ></use></svg></a>
+                        </div>
+                    </div>
+
+                    <div class="contact__footer">
+                        <button class="contact__text-link-title btn">E-mail:</button>
+                        <div class="contact__text-link-mail">olha.panchyshyna@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    @@include('html/script.html', {})
+</body>
+</html>

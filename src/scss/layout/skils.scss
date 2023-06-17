@@ -1,0 +1,60 @@
+.skils{
+    margin-top: 125px;
+    &__wrapper{
+        padding: 0 50px;
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(auto,400px));
+        column-gap: 185px;
+    }
+    &__item{
+        margin-bottom: 50px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+        &_head{
+            display: grid;
+            grid-template:  minmax(40px, auto) / 36px minmax(auto,236px);
+            grid-auto-rows: minmax(40px, auto);
+            column-gap: 18px;
+            position: relative;
+            margin-bottom: 6px;
+            @include beforeItemLine;
+            &_title{
+                color: $darkWhiteColor;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 21px;
+            }
+            &_subtitle{
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                color: $darkWhiteColor;
+            }
+        }
+        &_footer{
+            &_text{
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                color: $darkWhiteColor;
+            }
+        }
+    }
+    &__link{
+        width: 25px;
+        height: 25px;
+        fill: $darkWhiteColor;
+        margin: 6px 0 0 6px;
+    }
+    &__subtitle{
+        color: rgba(255, 255, 255, 0) !important;
+        margin-bottom: 45px;
+    }
+    &__list{
+        @include beforeListLine;
+        position: relative;
+    }
+}
+

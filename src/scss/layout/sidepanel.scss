@@ -1,0 +1,29 @@
+.sidepanel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 340px;
+    width: 100%;
+    position: fixed;
+    top: 350px;
+    left: -115px;
+    z-index: 5;
+    transform: rotate(-90deg);
+    &__link{
+        fill: $whiteColor;
+        width: 20px;
+        height: 20px;
+        &:hover{
+            fill: $mainColor;
+        }
+    }
+    &__line{
+        width: 70px;
+        height: 0px;
+        border: 2px solid $whiteColor;
+        
+    }
+    &__text{
+        color: $whiteColor;
+    }
+}
