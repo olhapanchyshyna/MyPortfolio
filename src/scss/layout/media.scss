@@ -232,6 +232,7 @@
         &__wrapper{
             max-width: 310px;  
             width: 100%;
+            overflow: hidden;
             margin: 0 auto;
         }
         &__list{
@@ -256,6 +257,7 @@
             max-width: 300px;
             width: 100%;
             margin: 0 auto;
+            overflow-x: hidden;
         }
         &__item{
             display: none;

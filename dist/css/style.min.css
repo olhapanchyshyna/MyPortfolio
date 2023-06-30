@@ -1076,8 +1076,8 @@ body.lock {
   --animate-delay: 0.9s;
 }
 
-html, body {
-  overflow-x: hidden !important;
+.overflowX {
+  overflow-x: hidden;
 }
 
 body {
@@ -1368,6 +1368,7 @@ body {
   .portfolio__wrapper {
     max-width: 310px;
     width: 100%;
+    overflow: hidden;
     margin: 0 auto;
   }
   .portfolio__list {
@@ -1389,6 +1390,7 @@ body {
     max-width: 300px;
     width: 100%;
     margin: 0 auto;
+    overflow-x: hidden;
   }
   .use__item {
     display: none;
