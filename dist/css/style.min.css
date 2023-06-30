@@ -1072,7 +1072,7 @@ body.lock {
 }
 
 :root {
-  --animate-duration: 400ms;
+  --animate-duration: 700ms;
   --animate-delay: 0.9s;
 }
 
