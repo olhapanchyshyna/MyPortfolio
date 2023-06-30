@@ -120,6 +120,11 @@ body{
 .slider__indicators{
     display: none;
 }
-
+.slick-active{
+    opacity: 1 !important;
+}
+.slide_active{
+    display: block !important;
+}
 
 @import 'layout/media';

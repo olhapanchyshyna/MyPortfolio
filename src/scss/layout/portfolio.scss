@@ -4,7 +4,6 @@
         display: grid;
         margin-top: 30px;
         grid-template-columns: repeat(3, minmax(290px,340px));
-        grid-template-rows: minmax(200px,320px) minmax(200px,300px);
         grid-auto-rows: minmax(200px,320px);
         gap: 10px;
     }

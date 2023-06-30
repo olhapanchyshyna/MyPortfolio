@@ -4,8 +4,7 @@
         margin-top: 60px;
         display: grid;
         grid-template-columns: repeat(4, minmax(auto, 270px));
-        grid-template-rows: repeat(2, minmax(270px, auto));
-        grid-auto-rows: minmax(270px, auto);
+        grid-auto-rows: 295px;
         gap: 13px;
     }
     &__item{
