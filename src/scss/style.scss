@@ -36,6 +36,14 @@
 @import 'layout/portfolio';
 @import 'layout/contact';
 
+:root {
+    --animate-duration: 400ms;
+    --animate-delay: 0.9s;
+}
+
+html, body{
+    overflow-x: hidden !important;
+}
 
 body{
     background-color: #030303;
