@@ -55,6 +55,9 @@
         height: 28px;
         fill: $darkWhiteColor;
         cursor: pointer;
+        &:hover{
+            fill: $mainColor;
+        }
     }
 
     &__text-link{

@@ -1057,6 +1057,9 @@ body.lock {
   fill: rgba(255, 255, 255, 0.8901960784);
   cursor: pointer;
 }
+.contact__link:hover {
+  fill: #930196;
+}
 .contact__text-link-title {
   color: rgba(255, 255, 255, 0.8901960784);
   margin-top: 40px;
