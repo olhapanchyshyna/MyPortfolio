@@ -17,21 +17,20 @@
         align-items: center;
     }
     &__title{
-        max-width: 680px;
+        max-width: 870px;
         width: 100%;
         font-weight: 700;
-        font-size: 100px !important;
-        line-height: 95px !important;
+        font-size: 115px !important;
+        line-height: 110px !important;
         margin-bottom: 60px;
         color: rgba(255, 255, 255, 0.8901960784);
         text-shadow: #930196 5px 5px;
         span{
             color: rgba(255, 255, 255, 0.8901960784);
-            margin-left: 50px;
+            margin-left: 65px;
         }
     }   
     &__subtitle{
-        font-weight: 100 !important;
         margin-bottom: 10px;
     }
     &__btn-group{

@@ -85,10 +85,10 @@
     // first-screen
     .first-screen{
         &__title{
-            font-size: 75px !important;
+            font-size: 88px !important;
             max-width: 530px;
             width: 100%;
-            line-height: 70px !important;
+            line-height: 90px !important;
         }
         &__subtitle {
             margin-bottom: 20px;
@@ -137,13 +137,6 @@
 
     }
 
-    // indicator 
-    .indicator{
-        &__list{
-            grid-template-columns: repeat(2, minmax(200px, 350px));
-            grid-template-rows: repeat(2, minmax(70px, auto));
-        }
-    }
 
     // skils
     .skils{
@@ -193,10 +186,10 @@
    // first-screen
     .first-screen{
         &__title{
-            font-size: 55px !important;
+            font-size: 65px !important;
             max-width: 380px;
             width: 100%;
-            line-height: 60px !important;
+            line-height: 65px !important;
             span {
                 margin-left: 30px;
             }
@@ -227,19 +220,13 @@
             width: 100%;
         }
         &__list{
-            padding: 140px 0 0 20px;
+            padding: 200px 0 0 20px;
+            a{
+                font-size: 24px;
+            }
         }
     }
 
-
-    // indicator 
-    .indicator{
-        &__list{
-            justify-content: center;
-            grid-template-columns: repeat(1, minmax(200px, 350px));
-            grid-template-rows: repeat(4, minmax(70px, auto));
-        }
-    }
 
 
     // portfolio
@@ -275,17 +262,17 @@
 @media screen and (max-width: 400px){
     .first-screen{
         &__title{
-            font-size: 45px !important;
-            max-width: 300px;
+            font-size: 50px !important;
+            max-width: 320px;
             width: 100%;
-            line-height: 45px !important;
+            line-height: 65px !important;
             text-align: center;
             span {
                 margin-left: 0px;
             }
         }
         &__subtitle {
-            max-width: 200px;
+            max-width: 250px;
             margin: auto;
             margin-bottom: 50px;
             font-size: 14px;

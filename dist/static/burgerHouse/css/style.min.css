@@ -709,6 +709,8 @@ body.lock {
   }
   .header .currently {
     position: fixed;
+    margin-top: 58px;
+    z-index: 50;
   }
   .header .menu-item {
     margin: 10px 0;
