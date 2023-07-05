@@ -150,9 +150,9 @@ function forms(state) {
     thanksTitle = thanksModal.querySelector('.modal-window__title'),
     thanksSubTitle = thanksModal.querySelector('.modal-window__subtitle');
   var message = {
-    loading: 'Загрузка...',
-    okay: 'Спасибо за вашу заявку!',
-    failure: 'Что-то пошло не так...'
+    loading: 'loading...',
+    okay: 'Thanks for your application!',
+    failure: 'Something went wrong...'
   };
   function serverPostData(_x, _x2) {
     return _serverPostData.apply(this, arguments);
@@ -634,7 +634,7 @@ function tabs(btnSelector, tabSelector) {
   function showTabs() {
     tabs.forEach(function (item) {
       if (item.classList.contains('fitness')) {
-        item.style.display = 'block';
+        item.style.display = 'flex';
       }
     });
   }
@@ -647,19 +647,19 @@ function tabs(btnSelector, tabSelector) {
       if (btn.classList.contains('fitness')) {
         tabs.forEach(function (item) {
           if (item.classList.contains('fitness')) {
-            item.style.display = 'block';
+            item.style.display = 'flex';
           }
         });
       } else if (btn.classList.contains('run')) {
         tabs.forEach(function (item) {
           if (item.classList.contains('run')) {
-            item.style.display = 'block';
+            item.style.display = 'flex';
           }
         });
       } else if (btn.classList.contains('triathlon')) {
         tabs.forEach(function (item) {
           if (item.classList.contains('triathlon')) {
-            item.style.display = 'block';
+            item.style.display = 'flex';
           }
         });
       }
