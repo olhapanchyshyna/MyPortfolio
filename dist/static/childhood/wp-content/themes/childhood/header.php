@@ -7,6 +7,8 @@
         <meta name="theme-color" content="#c9e0e04d">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta name="title" content="Мир дества">
+        <meta name="description" content="Мы воплощаем все детские мечты и помогаем родителям дарить счастливое детство!">
         <link rel="shortcut icon" href="<?php echo bloginfo('template_url'); ?>/assets/img/favicons/favicon.ico" type="image/x-icon">
         <link rel="apple-touch-icon" href="<?php echo bloginfo('template_url'); ?>/assets/img/favicons/apple-touch-icon.png">
         <link rel="apple-touch-icon" sizes="57x57" href="<?php echo bloginfo('template_url'); ?>/assets/img/favicons/apple-touch-icon-57x57.png">
@@ -33,40 +35,35 @@
                         <div class="header__contacts">
                             <div class="header__contacts-item">
                                 <img src="<?php echo bloginfo('template_url'); ?>/assets/img/icons/svg/email.svg" alt="почта" class="header__contacts-logo">
-                                <a target="_blank" href="<?php the_field('mail'); ?>" class="header__contacts-mail"><?php the_field('mail'); ?></a>
+                                <a href="<?php the_field('mail', 20); ?>" class="header__contacts-mail"><?php the_field('mail', 20); ?></a>
                             </div>
                             <div class="header__contacts-item">
                                 <img src="<?php echo bloginfo('template_url'); ?>/assets/img/icons/svg/phone.svg" alt="телефон" class="header__contacts-logo">
                                 <div class="header__contacts-tel">
-                                    <a target="_blank" href="<?php the_field('first_number');?>"><?php the_field('first_number'); ?></a>
-                                    <a target="_blank" href="<?php the_field('second_number');?>"><?php the_field('second_number');?></a>
+                                    <a href="<?php the_field('first_number', 20);?>"><?php the_field('first_number', 20); ?></a>
+                                    <a href="<?php the_field('second_number', 20);?>"><?php the_field('second_number', 20);?></a>
                                 </div>
                             </div>
                             <div class="header__contacts-item">
                                 <img src="<?php echo bloginfo('template_url'); ?>/assets/img/icons/svg/pointer.svg" alt="указатель" class="header__contacts-logo">
-                                <address><?php the_field('adress'); ?></address>
+                                <address><?php the_field('adress', 20); ?></address>
                             </div>
                         </div>
                     </div>
                 </div>
                 <nav class="row" data-slide="1">
-                    <ul class="header__nav">
-                        <li>
-                            <a class="header__nav-item" href="#about">Про компанию</a>
-                        </li>
-                        <li>
-                            <a class="header__nav-item" href="#specialists">Наша команда</a>
-                        </li>
-                        <li>
-                            <a class="header__nav-item" href="#toys">Игрушки</a>
-                        </li>
-                        <li>
-                            <a class="header__nav-item" href="#aboutus">Наша история</a>
-                        </li>
-                        <li>
-                            <a class="header__nav-item" href="#contacts">Контакты и отзывы</a>
-                        </li>
-                    </ul>
+
+                    <?php
+                        wp_nav_menu( [
+                            'menu'            => 'Main',
+                            'container'       => 'false',
+                            'menu_class'      => 'header__nav',
+                            'echo'            => true,
+                            'fallback_cb'     => 'wp_page_menu',
+                            'items_wrap'      => '<ul class="header__nav">%3$s</ul>',
+                            'depth'           => 1,
+                        ] );
+                    ?>
                 </nav>
             </div>
             <div class="header__hamburger">
