@@ -292,6 +292,8 @@ body.lock {
 
 .header {
   padding: 30px 0;
+  position: relative;
+  z-index: 10;
 }
 .header .container {
   display: flex;

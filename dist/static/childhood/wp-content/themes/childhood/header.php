@@ -6,7 +6,7 @@
 		<title><?php bloginfo('name'); ?></title>
         <meta name="theme-color" content="#c9e0e04d">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta name="title" content="Мир дества">
         <meta name="description" content="Мы воплощаем все детские мечты и помогаем родителям дарить счастливое детство!">
         <link rel="shortcut icon" href="<?php echo bloginfo('template_url'); ?>/assets/img/favicons/favicon.ico" type="image/x-icon">
